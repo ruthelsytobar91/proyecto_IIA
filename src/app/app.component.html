@@ -11,7 +11,7 @@
   <body>
       <h3 align="center">INSTITUCION INTERACTIVA AMBIENTAL</h3>
 
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ad2f0f;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #da340b;">
     <a class="navbar-brand" href="#"><strong>Logo </strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,28 @@
       </form>
     </div>
   </nav>
-  <router-outlet></router-outlet>
+  <div class="row">
+    <div class="col-1">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" routerLink='/usuario'  id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Usuarios</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Eventos</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Permisos</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Informes</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Notas</a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Actividades</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Materias</a>
+      </div>
+    </div>
+    <!--
+      *@ Para ver los componentes de los usuarios
+      * " cambia por componente "
+    -->
+    <div class="col-11">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>   
+  
 
 
   <footer>

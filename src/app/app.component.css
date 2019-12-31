@@ -4,3 +4,8 @@ footer{
   position: absolute;
   width: 100%;
 }
+
+.navbar-expand-lg{
+  height: 30px;
+
+}

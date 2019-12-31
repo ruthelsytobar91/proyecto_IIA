@@ -1,0 +1,27 @@
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills" style="background-color: #a7babe;">       
+      <li class="nav-item">       
+        <button class="btn btn-success" (click)="showFunction()">Ver Usuario</button>
+      </li>
+      <li class="nav-item ">       
+        <button class="btn btn-success">Editar Usuario</button>
+      </li>
+      <li class="nav-item">       
+        <button class="btn btn-success">Eliminar Usuario</button>
+      </li>      
+    </ul>
+  </div>
+  <div class="card-body">
+    <div *ngIf = "show">
+        Ver
+    </div>
+    <div *ngIf = "edite">
+        Editar
+    </div>
+    <div *ngIf = "delete">
+        Eliminar
+    </div>
+
+  </div>
+</div>
