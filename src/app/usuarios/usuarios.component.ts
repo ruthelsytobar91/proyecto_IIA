@@ -15,8 +15,27 @@ export class UsuariosComponent implements OnInit {
   public edite: boolean = false;
   public delete: boolean = false;
 
-  showFunction(){
-    this.show = true;
+  crudFunction(crud:String){
+    switch (crud) {
+      case "show":
+        this.show = true;
+        this.edite = false;
+        this.delete = false;
+        break;
+      case "edite":
+        this.edite = true;
+        this.show = false;
+        this.delete = false;
+        break;
+      case "delete":
+        this.delete = true;
+        this.show = false;
+        this.edite =false;
+
+        break;
+      
+    }
+    
   }
 
 

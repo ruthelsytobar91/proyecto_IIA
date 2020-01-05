@@ -2,13 +2,13 @@
   <div class="card-header">
     <ul class="nav nav-pills card-header-pills" style="background-color: #a7babe;">       
       <li class="nav-item">       
-        <button class="btn btn-success" (click)="showFunction()">Ver Usuario</button>
+        <button class="btn btn-success" (click)="crudFunction('show')">Ver Usuario</button>
       </li>
       <li class="nav-item ">       
-        <button class="btn btn-success">Editar Usuario</button>
+        <button class="btn btn-success" (click)="crudFunction('edite')">Editar Usuario</button>
       </li>
       <li class="nav-item">       
-        <button class="btn btn-success">Eliminar Usuario</button>
+        <button class="btn btn-success" (click)="crudFunction('delete')">Eliminar Usuario</button>
       </li>      
     </ul>
   </div>
