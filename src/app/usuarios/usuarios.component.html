@@ -43,11 +43,39 @@
         </div>
         <div class="col-sm-4"></div>
       </div>
-      
+
     </div>
 
     <div *ngIf="edite">
-      Editar
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Diego Alejandro Tobar</h5>
+              <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              Featured
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <form class="form-inline">                  
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only">Su email</label>
+                    <input type="email" class="form-control" id="inputPassword2" placeholder="Su email">
+                  </div>                 
+                </form>
+              </li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
     </div>
     <div *ngIf="delete">
       Eliminar
