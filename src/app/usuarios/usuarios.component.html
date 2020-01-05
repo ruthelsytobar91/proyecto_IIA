@@ -1,50 +1,51 @@
 <div class="card text-center">
   <div class="card-header">
-    <ul class="nav nav-pills card-header-pills" style="background-color: #a7babe;">       
-      <li class="nav-item">       
+    <ul class="nav nav-pills card-header-pills" style="background-color: #a7babe;">
+      <li class="nav-item">
         <button class="btn btn-success" (click)="crudFunction('show')">Ver Usuario</button>
       </li>
-      <li class="nav-item ">       
+      <li class="nav-item ">
         <button class="btn btn-success" (click)="crudFunction('edite')">Editar Usuario</button>
       </li>
-      <li class="nav-item">       
+      <li class="nav-item">
         <button class="btn btn-success" (click)="crudFunction('delete')">Eliminar Usuario</button>
-      </li>      
+      </li>
     </ul>
   </div>
   <div class="card-body">
-    <div *ngIf = "show">
-        <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Diego Alejandro Tobar</h5>
-    <p class="card-text"></p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">TI: 1.025.212.463</li>
-    <li class="list-group-item">Vereda Pepino B/r las Palmas</li>
-    <li class="list-group-item">Grado 4</li>
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Regresar</a>
-    <a href="#" class="card-link">Modulos</a>
-  </div>
-</div>
-        <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">ALUMNO</h5>
-    <p class="card-text">Alumno que se destaca por su buen rendimiento y desempeno escolar.</p>
-  </div>
+    <div *ngIf="show">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Diego Alejandro Tobar</h5>
+          <p class="card-text"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">TI: 1.025.212.463</li>
+          <li class="list-group-item">Sede Principal</li>
+          <li class="list-group-item">Vereda Pepino B/r las Palmas</li>
+          <li class="list-group-item">Grado 4</li>
+        </ul>
 
-</div> 
-        
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ALUMNO</h5>
+          <p class="card-text">Alumno que se destaca por su buen rendimiento y desempeno escolar.</p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Regresar Pagina Inicial</a>
+        </div>
+
+      </div>
+
     </div>
-    <div *ngIf = "edite">
-        Editar
+    <div *ngIf="edite">
+      Editar
     </div>
-    <div *ngIf = "delete">
-        Eliminar
+    <div *ngIf="delete">
+      Eliminar
     </div>
 
   </div>
