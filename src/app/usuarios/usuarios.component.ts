@@ -11,6 +11,11 @@ export class UsuariosComponent implements OnInit {
   
   ngOnInit() {
   }
+  public image:any = [
+    "/assets/imagenes/alejandro.jpg" // 0
+    ,"/assets/imagenes/carlangas.jpg" // 1
+  ]
+
   public show: boolean = false;
   public edite: boolean = false;
   public delete: boolean = false;

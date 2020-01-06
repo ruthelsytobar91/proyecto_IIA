@@ -18,7 +18,7 @@
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src={{image[1]}} class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Diego Alejandro Tobar</h5>
               <p class="card-text"></p>
@@ -48,38 +48,89 @@
 
     <div *ngIf="edite">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-2">
           <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Diego Alejandro Tobar</h5>
-              <p class="card-text"></p>
-            </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              Featured
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <form class="form-inline">                  
-                  <div class="form-group mx-sm-3 mb-2">
-                    <label for="inputPassword2" class="sr-only">Su email</label>
-                    <input type="email" class="form-control" id="inputPassword2" placeholder="Su email">
-                  </div>                 
-                </form>
-              </li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+          <div class="card-body">
+            <h5 class="card-title">Diego Alejandro Tobar</h5>
+            <p class="card-text"></p>
           </div>
         </div>
-        <div class="col-sm-4"></div>
-      </div>
-    </div>
-    <div *ngIf="delete">
-      Eliminar
-    </div>
+        <div class="col-sm-2">
+          <div class="card" style="width: 60rem;">
+            <div class="card-header">
+              Bienvenidos
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Tipo de
+                  Identidad</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
+                    placeholder="Tipo de Identidad">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Documento Identidad</label>
+                <div class="col-sm-10">
+                  <input type="" class="form-control" id="colFormLabel" placeholder="Documento Identidad">
+                </div>
+                <div class="form-group row">
+                  <label for="colFormLabel" class="col-sm-2 col-form-label">Fecha Expedicion Documento</label>
+                  <div class="col-sm-10">
+                    <input type="" class="form-control" id="colFormLabel" placeholder="Fecha Espedicion Documento">
+                  </div>
+                  <div class="form-group row">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">Pais Expedicion</label>
+                    <div class="col-sm-10">
+                      <input type="" class="form-control" id="colFormLabel" placeholder="Pais Expedicion">
+                    </div>
+                    <div class="form-group row">
+                      <label for="colFormLabel" class="col-sm-2 col-form-label">Departamento Expedicion</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="colFormLabel"
+                          placeholder="Departamento Expedicion">
+                      </div>
+                      <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Municipio Expedicion</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="colFormLabel" placeholder="Municipio Expedicion">
+                        </div>
+                        <div class="form-group row">
+                          <label for="colFormLabel" class="col-sm-2 col-form-label">Genero</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Genero">
+                          </div>
+                          <div class="form-group row">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Numero de Contacto</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" id="colFormLabel"
+                                placeholder="Munmero de Contacto">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="colFormLabel" class="col-sm-2 col-form-label">Padres o Acudiente</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" id="colFormLabel"
+                                placeholder="Padres o Acudiente">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4"></div>
+                    </div>
+                  </div>
+                  <div *ngIf="delete">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Diego Alejandro Tobar</h5>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card" style="width: 60rem;">
+                          <div class="card-header">
+                            Bienvenidos
+                  </div>
 
-  </div>
-</div>
+                </div>
+              </div>

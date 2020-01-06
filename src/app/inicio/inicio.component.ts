@@ -11,5 +11,8 @@ export class InicioComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  public images: any = [
+    "/assets/imagesIIA/carrucel1.jpg"//0
+    ,"/assets/imagesIIA/carrucel2.jpg"//1
+  ]
 }
