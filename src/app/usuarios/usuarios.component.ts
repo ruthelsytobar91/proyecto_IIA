@@ -19,6 +19,7 @@ export class UsuariosComponent implements OnInit {
   public show: boolean = false;
   public edite: boolean = false;
   public delete: boolean = false;
+  public taskDelete: boolean = false;
 
   crudFunction(crud:String){
     switch (crud) {
@@ -41,6 +42,13 @@ export class UsuariosComponent implements OnInit {
       
     }
     
+  }
+  deleteUserFunction(){
+    this.taskDelete = true;
+    setTimeout(function(e){
+      console.log(e)
+      this.taskDelete = false;
+    }.bind(this),1500)
   }
 
 
